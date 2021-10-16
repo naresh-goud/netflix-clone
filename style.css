@@ -11,29 +11,62 @@ body {
   background-color: black;
 }
 .navbar-container {
+  font-family: "Sen", sans-serif;
   display: flex;
   align-items: center;
-  background-color: blanchedalmond;
-  padding: 0 60px;
-  height: 100px;
+  padding: 0 50px;
+  height: 100%;
+  color: white;
 }
 
 .logo-container {
   flex: 1;
 }
-
-.menu-container {
-  flex: 1;
+.logo {
+  font-family: "Sen", sans-serif;
+  font-size: 30px;
+  color: #4dbf00;
 }
 
+.menu-container {
+  flex: 6;
+}
+.menu-list {
+  display: flex;
+  list-style: none;
+}
+.menu-list-item {
+  margin-right: 30px;
+}
+.menu-list-item.active {
+  font-weight: bold;
+}
 .profile-container {
-  flex: 1;
+  flex: 2;
+  display: flex;
+  align-items: center;
+}
+.profile-text-container {
+  margin: 0 20px;
+}
+.profile-picture {
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.toggle {
+  width: 40px;
+  height: 20px;
+  background-color: white;
+  border-radius: 30px;
 }
 
 .sidebar {
   width: 50px;
   height: 100%;
   background-color: black;
-  position: fix ed;
+  position: fixed;
   top: 0;
 }
